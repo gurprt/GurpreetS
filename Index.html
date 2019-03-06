@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Discount Calculator</title>
+	<link rel="stylesheet" type="text/css" href="discountCalculator.css"/>
+	<script src="discountCalculator.js"></script>
+</head>
+<body>
+	<dir class="frame" style="text-align:center">
+		<h1>DISCOUNT CALCULATOR</h1>
+		<form name="Form">
+		<table>
+			<tr>
+				<dir>
+					<label for="price">Item Price:</label>
+					<input type="text"  id="iteamPrice" onkeypress="return IsNumeric(event);"/>
+					
+				</dir>
+				<dir>
+					<label for="discount">Discount %:</label>
+					<input type="text"  id="discountPercentage" onkeypress="return IsNumeric(event);"/>
+					
+				</dir>
+				<dir>
+					<label for="discountDollar">Discount $:</label>
+					<input type="text"  id="discountDollar" disabled/>
+				</dir>
+				<dir>
+					<label for="net_price">Net Price:</label>
+					<input type="text" pattern="[1-9]" id="net_price" disabled/>
+				</dir>
+				<dir>
+				<p id="error" style="color: Red; display: none">Note: If you use any Alpha Numberic, Please use a numeric value.</p>
+					<p id="noteParagraph"></p>
+				</dir>
+				<dir>
+					<input type="button" id="calculate" value="Calculate"/>
+					<input type="reset" id="clear" value="Clear"/>
+					
+				</dir>
+			</tr>				
+		</table>
+		</form>
+	</dir>
+	<dir class="frame1" style="text-align:center">
+		<dir>
+			<h3 >Student Name: Gurpreet Singh</h3>
+			<h3 >Student ID: C0727471</h3>
+		</dir>
+	</dir>	
+</body>
+</html>

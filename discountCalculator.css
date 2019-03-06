@@ -1,0 +1,88 @@
+input[type=text] {
+	border: none;
+	border-bottom: 2px solid gray;
+}
+
+input[type=button] {
+	background-color: #e7e7e7; 
+	color:black;
+	border:none;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+p{
+	color:red;
+}
+
+input[type=reset] {
+	background-color: #e7e7e7; 
+	color:black;
+	border:none;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+input {
+	color:black;
+	border:none;
+	padding: 5px 5px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+h1 {
+	color:black;
+	font-family: Arial;
+	padding: 10px;
+	text-align: center;
+	background: #1abc9c;
+	color: white;
+	font-size: 30px;
+}
+
+lable {
+	font-family: Times New Roman;
+	
+}
+
+body{
+	background-color:#fafafa;
+}
+
+dir {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+dir.frame {
+	background-color: white;
+	border: 2px 2px solid white;
+	border-radius: 4px;
+	padding: 5px 5px;
+	margin-top: 5%;
+	margin-bottom: 0%;
+	margin-left:36%;
+	margin-right:36%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+dir.frame1 {
+	background-color: 0 6px 20px 0 rgba(0, 0, 0, 0.30));
+	border: none;
+	border-radius: 2px;
+	padding: 5px 15px;
+	margin: 0% 36.5%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
