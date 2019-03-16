@@ -7,50 +7,53 @@
 	<script src="discountCalculator.js"></script>
 </head>
 <body>
-	<dir class="frame" style="text-align:center">
-		<h1>DISCOUNT CALCULATOR</h1>
-		<!--Gurpreet Singh C0727471-->
-		<form name="Form">
+		<form name="Form" method="post" action="index.php">
 		<table>
 			<tr>
-				<dir>
-					<label for="price">Item Price:</label>
-					<input type="text"  id="iteamPrice" onkeypress="return IsNumeric(event);"/>
+				<td>
+					<label for="name">name</label>
+					<input type="text"  id="name" />
 					
-				</dir>
-				<dir>
-					<label for="discount">Discount %:</label>
-					<input type="text"  id="discountPercentage" onkeypress="return IsNumeric(event);"/>
+				</td>
+				<td>
+					<label for="password">password</label>
+					<input type="password"  id="password"/>
 					
-				</dir>
-				<dir>
-					<label for="discountDollar">Discount $:</label>
-					<input type="text"  id="discountDollar" disabled/>
-				</dir>
-				<dir>
-					<label for="net_price">Net Price:</label>
-					<input type="text" pattern="[1-9]" id="net_price" disabled/>
-				</dir>
-				<dir>
-				<p id="error" style="color: Red; display: none">Note: If you use any Alpha Numberic, Please use a numeric value.</p>
-					<p id="noteParagraph"></p>
-				</dir>
-				<dir>
-					<input type="button" id="calculate" value="Calculate"/>
-					<input type="reset" id="clear" value="Clear"/>
+				</td>
+				<td>
+					<label for="confirm password">Confirm password</label>
+					<input type="text"  id="cpassword"/>
+				</td>
+					<input type="submit" name="submit" value="submit"/>
 					
-				</dir>
+				</td>
 			</tr>				
 		</table>
 		</form>
-	</dir>
-	<dir class="frame1" style="text-align:center">
-		<dir>
-			<h3 >Student Name: Gurpreet Singh</h3>
-			<h3 >Git Hub: gurprt</h3>
-			<h3 >Student ID: C0727471</h3>
-		</dir>
-	</dir>	
-		<!--The second change by me-->
 </body>
 </html>
+<?php
+$con= mysql_connect("localhost","root","") or die(mysql_error());
+$db = mysql_select_db('don',$con) or die (mysql_error());
+if (isset($_POST['submit'])){
+	$name = $_POST['name'];
+	$password = $_POST['password'];
+	$c_password = $_POST['cpassword'];
+	
+if ($name == ''){
+	echo "<script>alert('enter the name')</script>"
+}
+if ($password == ''){
+	echo "<script>alert('enter the password')</script>"
+}
+if ($c_password == ''){
+	echo "<script>alert('enter the password')</script>"
+}
+if ($password != $c_password){
+	echo "<script>alert('pass dont match')</script>"
+}
+}
+else {
+	echo"<script>alert('registration sucessfull')</script>"
+}
+?>
