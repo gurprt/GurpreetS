@@ -1,1 +1,1 @@
-# GurpreetS
+# Gurpreet Singh -- Discount Calculator
